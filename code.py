@@ -53,7 +53,6 @@ root=Tk()
 root.grid_rowconfigure(0,weight=1)
 root.grid_columnconfigure(0,weight=1)
 
-imager = ImageTk.PhotoImage(file = "a.jpg")
 
 can=Canvas(root)
 can.grid(row=0,column=0,sticky='nswe')
