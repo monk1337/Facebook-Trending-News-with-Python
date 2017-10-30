@@ -34,7 +34,7 @@ for i in news_link:
     driver.get(i)
 
 
-    news_image1=driver.find_element_by_xpath('//*[@id="u_ps_0_4_2"]/a/div[1]/div/img')
+    news_image1=driver.find_element_by_css_selector('img[class="scaledImageFitWidth img"]')
     news_images.append(news_image1.get_attribute("src"))
     news_headline1=driver.find_element_by_css_selector('div[class ="_4l5g"]')
     news_headline.append(news_headline1.text)
